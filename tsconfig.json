@@ -19,7 +19,16 @@
 			}
 		],
 		"paths": {
-			"@/*": ["./*"]
+			"@/*": ["./*"],
+			// Shared components
+			"@ui/*": ["./src/shared/components/ui/*"],
+			"@forms/*": ["./src/shared/components/forms/*"],
+
+			// Features components
+			"@features/*": ["./src/features/*"],
+
+			// Shared utils
+			"@utils/*": ["./src/shared/utils/*"]
 		}
 	},
 	"include": [
