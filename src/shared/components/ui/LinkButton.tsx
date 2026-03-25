@@ -1,8 +1,7 @@
 import Link from "next/link";
+import type { ComponentProps } from "react";
 
-type LinkButtonProps = {
-	href: string;
-	children: React.ReactNode;
+type LinkButtonProps = ComponentProps<typeof Link> & {
 	type?: "primary" | "secondary";
 };
 

@@ -19,6 +19,7 @@ export default function Logo({
 				alt="Logo Orbity"
 				width={width}
 				height={height}
+				className="h-14 w-auto"
 				unoptimized
 			/>
 		</Link>

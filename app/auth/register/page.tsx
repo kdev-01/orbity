@@ -1,3 +1,4 @@
+import RegisterForm from "@features/auth/components/RegisterForm";
 import generateTitle from "@utils/generateTitle";
 import type { Metadata } from "next";
 
@@ -6,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function RegisterPage() {
-	return <h1>Registrarse</h1>;
+	return <RegisterForm />;
 }

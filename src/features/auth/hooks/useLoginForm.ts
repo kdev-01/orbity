@@ -1,6 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { loginSchema } from "../schemas/loginSchema";
+import { loginSchema } from "../schemas/authSchema";
 import type { LoginFormValues } from "../types/auth.types";
 
 export function useLoginForm() {
@@ -10,21 +10,17 @@ export function useLoginForm() {
 		formState: { errors, isSubmitting },
 	} = useForm<LoginFormValues>({
 		resolver: zodResolver(loginSchema),
-		defaultValues: {
-			email: "",
-			password: "",
-		},
 	});
 
-	const onSubmit = async (values: LoginFormValues) => {
-		console.log(values);
+	const onSubmit = async (data: LoginFormValues) => {
+		console.log(data);
 	};
 
 	return {
 		register,
 		handleSubmit,
+		onSubmit,
 		errors,
 		isSubmitting,
-		onSubmit,
 	};
 }
