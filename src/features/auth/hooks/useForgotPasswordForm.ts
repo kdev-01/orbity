@@ -1,6 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { forgotPasswordSchema } from "../schemas/authSchema";
+import { forgotPasswordSchema } from "../schemas/auth.schemas";
 import type { ForgotPasswordFormValues } from "../types/auth.types";
 
 export function useForgotPasswordForm() {

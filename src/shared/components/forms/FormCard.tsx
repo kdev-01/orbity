@@ -36,6 +36,7 @@ export default function FormCard({
 						src={imagePath}
 						alt={imageAlt ?? ""}
 						fill
+						sizes="50vw"
 						className="object-cover"
 						priority
 					/>

@@ -20,18 +20,25 @@
 		],
 		"paths": {
 			"@/*": ["./*"],
-			// Features components
+			// ===Features===
 			"@features/*": ["./src/features/*"],
 
-			// Shared components
+			// ===Shared===
+			// Components
 			"@ui/*": ["./src/shared/components/ui/*"],
 			"@forms/*": ["./src/shared/components/forms/*"],
 
-			// Shared utils
+			// Utils
 			"@utils/*": ["./src/shared/utils/*"],
 
-			// Shared validations
-			"@validations/*": ["./src/shared/validations/*"]
+			// Validations
+			"@validations/*": ["./src/shared/validations/*"],
+
+			// ===Libs===
+			"@lib/*": ["./src/lib/*"],
+
+			// ===Data Base===
+			"@db": ["./src/db"]
 		}
 	},
 	"include": [

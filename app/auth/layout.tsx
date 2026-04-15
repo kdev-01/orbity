@@ -1,6 +1,6 @@
 import BackLink from "@ui/BackLink";
 
-export default function PublicLayout({
+export default function AuthLayout({
 	children,
 }: Readonly<{ children: React.ReactNode }>) {
 	return (

@@ -55,7 +55,9 @@ export default function RegisterForm() {
 					{...register("confirmPassword")}
 				/>
 
-				<Button type="submit">Crear cuenta</Button>
+				<Button type="submit" disabled={isSubmitting}>
+					Crear cuenta
+				</Button>
 
 				<p className="mt-4 text-sm text-center text-muted-foreground">
 					¿Ya tienes cuenta?{" "}

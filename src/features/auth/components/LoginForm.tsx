@@ -50,7 +50,9 @@ export default function LoginForm() {
 					/>
 				</div>
 
-				<Button type="submit">Iniciar sesión</Button>
+				<Button type="submit" disabled={isSubmitting}>
+					Iniciar sesión
+				</Button>
 
 				<p className="text-sm text-center text-muted-foreground">
 					¿No tienes cuenta?{" "}

@@ -6,6 +6,11 @@
 	--color-sky: #006fad;
 }
 
+/* Sileo Toast Overrides */
+:root [data-sileo-title] {
+	text-transform: none;
+}
+
 /* @media (prefers-color-scheme: dark) {
 	:root {
 		--background: #0a0a0a;
